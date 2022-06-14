@@ -1,6 +1,6 @@
 #1.
-Name = input("Write your name: ")
-print("Hellow,", Name + "!")
+name = input("Write your name: ")
+print("Hellow,", name + "!")
 #2.
 number = int(input('Please enter an integer number:'))
 print("You number =", number)
@@ -21,11 +21,7 @@ if v > 0:
         print("Distance is", s, "km")
 #4.
 year = int(input("write a year:"))
-if year % 400 == 0:
-    print("yes")
-elif year % 100 == 0:
-    print("yes")
-elif year % 4 == 0:
+if year % 400 == 0 and year % 4 == 0 or year % 100 != 0:
     print("yes")
 else:
     print("no")
@@ -38,10 +34,8 @@ elif x < 0:
 else:
     print("sign(x) = 0")
 #6.
-x6 = float(input("X6 = "))
+x6 = abs(float(input("X6 = ")))
 mylist = (10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
-if x6 < 0:
-    x6 = -x6
 if x6 in mylist:
     print("yes")
 else:
