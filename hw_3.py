@@ -1,4 +1,4 @@
-#1.
+#1
 print(sum(map(int, list(input("Enter a three-digit number: ")))))
 #2.
 x = float(input("Enter number#2: "))
