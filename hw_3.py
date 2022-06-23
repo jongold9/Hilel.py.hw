@@ -1,5 +1,9 @@
 #1
-print(sum(map(int, list(input("Enter a three-digit number: ")))))
+number = int(input("Enter a three-digit number: "))
+a = number // 100
+b = number // 10 % 10
+c = number % 10
+print(a + b + c)
 #2.
 x = float(input("Enter number#2: "))
 print(float(x) - int(x))
@@ -10,8 +14,16 @@ list_ten = [10, 20, 30, 40, 50]
 list_ten.reverse()
 print(list_ten)
 #4.
-list_of_six = [100, 106, 112, 118, 124, 130, 136, 142, 148, 154, 160, 166, 172, 178, 184, 190, 196]
-print(list(map(lambda t: t if t < 150 and t % 5 == 0 else None, list_of_six)))
+def print_element_from_list(some_list: list):
+    for elem in some_list:
+        if elem < 150 and elem % 5 == 0:
+            print(elem)
+
+
+numbers = [100, 106, 112, 118, 124, 130, 136, 142, 148, 154, 160, 166, 172, 178, 184, 190, 196]
+
+print_element_from_list(numbers)
+
 #5.
 import random
 rnd = random.randint(1, 10)
