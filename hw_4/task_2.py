@@ -18,13 +18,12 @@ while n != 0:
     n = int(input("Enter number:"))
     if n > maximum:
         maximum, count_max = n, 1
-    elif n == maximum:
+    if n == maximum:
         count_max += 1
-
     if n > max1:
         max2 = max1
         max1 = n
-    elif n > max2:
+    if n > max2:
         max2 = n
     if n % 2 == 0:
         even += 1
